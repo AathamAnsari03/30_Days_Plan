@@ -111,7 +111,6 @@ function App() {
             <td>
                  <EditSaveButton
                   isEditing={EditingId === path.id}
-                  path={path}
                   onEdit={() => {
                     setEditingId(path.id);
                     setEditingStart(path.start);

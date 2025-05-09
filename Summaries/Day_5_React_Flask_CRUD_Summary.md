@@ -1,5 +1,4 @@
-
-# ✅ Day 5 Summary – Aatham Ansari
+# ✅ Day 5 Summary – Aatham Ansari - ok
 
 📅 Date: May 6–7, 2025  
 🧑‍💻 Topic: React Editable Table + Flask SQLAlchemy Integration
@@ -31,13 +30,13 @@
 
 ## 📦 Key Concepts Mastered
 
-| Concept | Description |
-|--------|-------------|
-| `PUT` method | Used to update full existing object |
-| REST API | Clean way for frontend to interact with backend |
-| Conditional rendering | Used to switch between text and `<input>` |
-| Controlled inputs | Managed form values with React state |
-| Component splitting | Moved Delete button into a reusable file |
+| Concept               | Description                                     |
+| --------------------- | ----------------------------------------------- |
+| `PUT` method          | Used to update full existing object             |
+| REST API              | Clean way for frontend to interact with backend |
+| Conditional rendering | Used to switch between text and `<input>`       |
+| Controlled inputs     | Managed form values with React state            |
+| Component splitting   | Moved Delete button into a reusable file        |
 
 ---
 
@@ -62,6 +61,4 @@
 
 ---
 
-
 💡 Aatham completed full CRUD dashboard using Flask + React — Pro-level full-stack flow with clean UI and reusable logic!
-
