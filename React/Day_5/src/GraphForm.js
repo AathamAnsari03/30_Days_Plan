@@ -1,0 +1,49 @@
+import React,{useState} from "react";
+import './GraphForm.css'
+
+
+function GraphForm({onSubmit}){
+    const handleSubmit = (e) => {
+        e.preventDefault();
+        const edgeList = {
+            start : from,
+            end : to,
+            distance : weight
+        };
+
+        fetch("http://localhost:5000/add-path",{
+            method : "POST",
+            headers : {
+                "Content-Type" : "application/json"
+            },
+            body : JSON.stringify(edgeList)
+        })
+        .then((res) => res.json())
+        .then((data) => {
+            alert(data.message);
+            setFrom("");
+            setTo("");
+            setWeight("");
+            onSubmit(data);
+        });
+    }
+
+    const [from, setFrom] = useState('')
+    const [to, setTo] = useState('')
+    const [weight, setWeight] = useState('')
+
+    return(
+
+    <div>
+        <form onSubmit={handleSubmit} className="graph-form"> 
+            <input value={from} onChange={(e) => setFrom(e.target.value)} placeholder="Enter Start"></input>
+            <input value={to} onChange={(e) => setTo(e.target.value)} placeholder="Enter End"></input>
+            <input value={weight} onChange={(e) => setWeight(e.target.value)} placeholder="Enter Distance"></input>
+            <button type="submit">Add Edge</button>
+        </form>
+    </div>
+
+    )
+}
+
+export default GraphForm
