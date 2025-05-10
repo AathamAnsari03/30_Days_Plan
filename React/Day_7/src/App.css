@@ -1,0 +1,95 @@
+/* Reset default browser styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Inter', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f5f7fa;
+  color: #2c3e50;
+  line-height: 1.6;
+}
+
+/* Center wrapper */
+.App, .container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Card style */
+.container {
+  background-color: #ffffff;
+  padding: 40px 50px;
+  border-radius: 12px;
+  box-shadow: 0 8px 40px rgba(0, 0, 0, 0.12);
+  width: 100%;
+  max-width: 420px;
+  flex-direction: column;
+}
+
+/* Headings */
+h1 {
+  font-size: 26px;
+  font-weight: 600;
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+p {
+  font-size: 16px;
+  margin-bottom: 25px;
+  text-align: center;
+  color: #555;
+}
+
+/* Inputs */
+input {
+  width: 100%;
+  padding: 12px 14px;
+  margin-bottom: 16px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 15px;
+  transition: border-color 0.3s ease;
+}
+
+input:focus {
+  outline: none;
+  border-color: #2980b9;
+  box-shadow: 0 0 0 2px rgba(41, 128, 185, 0.2);
+}
+
+/* Buttons */
+button {
+  width: 100%;
+  padding: 12px 0;
+  background-color: #2980b9;
+  color: #fff;
+  font-size: 16px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  margin-bottom: 12px;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #2471a3;
+}
+
+/* Spacing between buttons (Homepage) */
+button + button {
+  margin-top: 10px;
+}
+
+/* Dashboard */
+.dashboard-msg {
+  font-size: 18px;
+  font-weight: 500;
+  text-align: center;
+  color: #2c3e50;
+  margin-top: 20px;
+}
