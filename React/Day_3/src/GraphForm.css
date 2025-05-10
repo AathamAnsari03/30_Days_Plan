@@ -1,0 +1,43 @@
+/* GraphForm.css */
+
+.graph-form {
+    background-color: #e9f5fb;
+    padding: 20px;
+    margin: 20px auto;
+    border-radius: 12px;
+    max-width: 400px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .graph-form input {
+    display: block;
+    width: 93%;
+    padding: 10px 12px;
+    margin-bottom: 12px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 16px;
+    outline: none;
+    transition: border 0.3s;
+  }
+  
+  .graph-form input:focus {
+    border-color: #007bff;
+  }
+  
+  .graph-form button {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 16px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 16px;
+    width: 100%;
+    transition: background-color 0.3s;
+  }
+  
+  .graph-form button:hover {
+    background-color: #0056b3;
+  }
+  
