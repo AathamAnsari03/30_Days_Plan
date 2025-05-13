@@ -3,7 +3,7 @@ import { useNavigate } from 'react-router-dom';
 import './styles.css';
 
 
-function Dashboard(){
+function AdminDashboard(){
     const navigate = useNavigate();
     const [message, setMessage] = useState('');
 
@@ -15,7 +15,7 @@ function Dashboard(){
         navigate('/login');
     }
 
-    fetch('http://localhost:5000/dashboard', {
+    fetch('http://localhost:5000/admin-dashboard', {
         method: 'GET',
         headers: {
           'Authorization': `Bearer ${token}`
@@ -46,4 +46,4 @@ function Dashboard(){
         </div>
     );
 }
-export default Dashboard;
+export default AdminDashboard;

@@ -22,8 +22,14 @@ function Login(){
         .then((data) => {
             if (data.message === 'Login successful'){
                 localStorage.setItem('token', data.access_token);
-                alert('Login successful');
-                navigate('/dashboard');
+                if (data.role === 'admin'){
+                    alert("Admin login successful");
+                    navigate('/admin-dashboard');
+                }
+                else if (data.role === 'user'){
+                    alert('Login successful');
+                    navigate('/dashboard');
+                }
             }
             else if (data.message === 'Invalid credentials'){
                 alert('Invalid credentials');
